@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="syle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMs</title>
+</head>
+<body>
+    <form action="#" method="get" autocomplete="off" target="_blank">
+        <p>O MEU FORMULÁRIO</p>
+
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Seu Nome">
+        </p>
+
+        <p> 
+            <!-- PARA TER APENAS UMA MARCAÇÃO NO TIPO RADIUS DEVO COLOCAR TODOS COM O MESMO NAME -->
+            Gênero: <br>
+            <label for="feminino">Feminino: </label>
+            <input type="radio" name="genero" id="feminino"> <br>
+
+            <label for="masculino">Masculino: </label>
+            <input type="radio" name="genero" id="masculino" checked><br>
+
+            <label for="outro">Outro:</label>
+            <input type="radio" name="genero" id="outro">
+        </p>
+
+        <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Reset</button>
+        </p>
+    </form>
+</body>
+</html>

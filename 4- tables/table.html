@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tables</title>
+</head>
+<body>
+    <div class="responsive">
+        <table>
+            <caption>Uma descrição para sua table</caption>
+            <thead>
+                <tr>
+                    <th>Título 1</th>
+                    <th>Título 2</th>
+                    <th>Título 3</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">Alma 1</td> 
+                    <td>Alma 3</td>
+                </tr>
+
+                <tr>
+                    <td>Brasa 1</td>
+                    <td>Brasa 2</td>
+                    <td>Brasa 3</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="2" rowspan="2"></td> <!--Para ocupar duas linhas e duas tabelas-->
+                    <td>TOTAL:</td>
+                </tr>
+
+                <tr>
+                    <td>R$ 333</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>

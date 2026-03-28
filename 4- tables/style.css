@@ -1,0 +1,31 @@
+body {
+    justify-items: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+table {
+    border-collapse: collapse;
+    width: 800px;
+}
+
+table caption {
+    font-family:'Times New Roman';
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+table td, table th {
+    border: 2px solid blueviolet;
+    padding: 5px;
+    text-align: left;
+}
+
+tfoot td {
+    background-color: #808080;
+}
+
+.responsive {
+    max-width: 100%;
+    overflow: auto;
+}
