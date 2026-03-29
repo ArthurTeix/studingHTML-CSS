@@ -1,0 +1,88 @@
+/* QUANDO O MOUSE ESTÁ EM CIMA */
+h1:hover{
+    background-color: darkblue;
+    color: white;
+}
+
+/* QUANDO O MOUSE NÃO ESTÁ EM CIMA */
+h1:not(:hover){
+    background-color: lightseagreen;
+    color:blueviolet;
+}
+
+/* QUANDO O MOUSE ESTÁ PRESSIONANDO */
+button:focus{
+    border: 7px solid darkgreen;
+    box-shadow: 2px 4px lightblue;
+    font-weight: bold;
+    font-family: monospace;
+    font-style: italic;
+    background-color: aqua;
+    color: darkred;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+/* ITEM DESABILITADO */
+input:disabled{
+    cursor: not-allowed;
+    background-color: rgb(166, 255, 0);
+}
+/* ITEM HABILITADO E FUNCIONANDO */
+input:enabled{
+    background-color: cornflowerblue;
+    cursor: grab;
+    border: 2px solid darkviolet;
+    font-family: cursive;
+}
+
+/* USADA PARA FORMATAR PLACEHOLDERS */
+::placeholder{
+    color: rgb(0, 255, 183);
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* LINKS VISITADOS */
+a:visited{
+    color:yellowgreen;
+}
+
+/* TODOS OS LINKS */
+a:link{
+    color: red;
+}
+
+/* ADICIONA ITENS APÓS */
+ul li::after{
+    content: ' - ';
+    color: red;
+}
+
+/* ADICIONA ITENS ANTES */
+ul li::before{
+    content: ' ~ ';
+    color: blue;
+}
+
+/* ALTERA APENAS A PRIMEIRA LETRA */
+.primeiro-texto::first-letter{
+    font-size: 50px;
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+/* ALTERA APEMAS A PRIMEIRA LINHA */
+.primeiro-texto::first-line{
+    background-color: lightskyblue;
+}
+
+/* O ITEM QUE ESTOU SELECIONANDO COM O MOUSE */
+p::selection{
+    background-color: black;
+    color: white;
+}

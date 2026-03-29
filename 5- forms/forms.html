@@ -29,6 +29,64 @@
         </p>
 
         <p>
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date" value="2026-03-28">
+        </p>
+
+        <!-- Formatação para add horas necessita do T no meio -->
+        <p>
+            <label for="datetime">Date:</label>
+            <input type="datetime-local" name="datetime" id="datetime" value="2026-03-28T20:20">
+        </p>
+
+        <!-- Posso adicionar cor padrão pelo nome ou cod hexadecimal -->
+        <p>
+            <label for="cor">Cor preferida:</label>
+            <input type="color" name="cor" id="cor" value="#317272">
+        </p>
+        
+        <!-- Posso definir o tipo de arquivo que quero receber apenas -->
+        <p>
+            <label for="file">Sua Foto:</label>
+            <input type="file" name="file" id="file" accept=".png, .jpg">
+        </p>
+
+        <!-- Posso definir o max e o min dos numeros desejados -->
+        <p>
+            <label for="number">Number:</label>
+            <input type="number" name="number" id="number" min="1" max="10" placeholder="1 a 10">
+        </p>
+
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="ex.: email@email.com">
+        </p>
+        
+        <!-- Omite os caracteres digitados -->
+        <p>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha">
+        </p>
+
+        <!-- Posso agrupar os grupos de select e formatar opção já selecionada ou desabilitar uma opção -->
+        <p>
+            <label for="select">Selecione a opção:</label>
+            <select name="select" id="select">
+                <optgroup label="Teste">
+                    <option value="qualquer 1">Valor 1</option>
+                    <option value="qualquer 2" selected>Valor 2</option>
+                    <option value="qualquer 3" disabled>Valor 3</option>
+                    <option value="qualquer 4">Valor 4</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <!-- Não precisa de colocar valor dentro do corpo, o valor adicionado vai como já formatado, também posso definir linhas e colunas -->
+        <p>
+            <label for="textarea">Textarea:</label>
+            <textarea name="textarea" id="textarea" rows="5" cols="9">Digite aqui</textarea>
+        </p>
+        <p>
             <button type="submit">Enviar</button>
             <button type="reset">Reset</button>
         </p>
