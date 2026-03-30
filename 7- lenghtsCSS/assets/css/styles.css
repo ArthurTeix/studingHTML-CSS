@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.pai{
+    background-color: yellow;
+    overflow: hidden;
+    font-size: 300px;
+}
+
+#One{
+    background-color: red;
+    height: 800px;
+    font-size: 30px;
+}
+
+#Two{
+    background-color: aqua;
+    height: 800px;
+    /* A MEDIDA em HERDA O TAMANHO DE ACORDO COM A PORCENTAGEM DA DO TAMANHO DO PAI */
+    font-size: 0.1em; 
+}
+
+#Three{
+    background-color: aquamarine;
+    height: 800px;
+    /* rem HERDA DO ROOT DA PÁGINA (Config Padrão) */
+    font-size: 2rem;
+}
